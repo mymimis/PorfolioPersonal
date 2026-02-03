@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myriam Nogales | Full Stack Developer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0a0a0a; /* Fondo oscuro elegante */
+            color: #e5e7eb;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #a3a3a3);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(15px);
+            background: rgba(10, 10, 10, 0.8);
+        }
+
+        /* Cursor personalizado opcional */
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full p-6 flex justify-between items-center z-50 nav-blur border-b border-white/5">
+        <span class="font-extrabold tracking-tighter text-2xl tracking-widest uppercase">MN</span>
+        <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.3em] font-medium">
+            <a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a>
+            <a href="#sobre-mi" class="hover:text-white transition-colors">Perfil</a>
+            <a href="#contacto" class="hover:text-white transition-colors">Contacto</a>
+        </div>
+    </nav>
+
+    <main class="relative h-screen flex flex-col justify-center px-8 lg:px-24 overflow-hidden">
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px]"></div>
+        
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <span class="text-blue-400 font-mono text-sm mb-4 block uppercase tracking-widest underline decoration-2 underline-offset-8">Software Developer</span>
+            <h1 class="text-7xl md:text-[11rem] font-extrabold tracking-tighter leading-[0.85] text-gradient">
+                MYRIAM<br>NOGALES
+            </h1>
+            <div class="mt-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <p class="max-w-xl text-lg md:text-xl text-gray-400 font-light leading-relaxed">
+                    Especializada en <span class="text-white font-medium italic">Desarrollo Multiplataforma</span>. 
+                    Actualmente construyendo soluciones robustas con Java 21, Angular y entornos 3D en Madrid.
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="flex flex-col items-end">
+                        <span class="text-[10px] uppercase tracking-[0.4em] text-gray-500">Disponibilidad</span>
+                        <span class="text-sm font-medium"><span class="dot bg-green-500 animate-pulse"></span>Proyectos Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="proyectos" class="px-8 lg:px-24 py-32 relative">
+        <h2 class="text-xs uppercase tracking-[0.5em] mb-16 text-gray-500 font-bold border-l-2 border-blue-600 pl-4" data-aos="fade-right">Proyectos Seleccionados</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-video bg-neutral-900 rounded-xl mb-6 overflow-hidden border border-white/5">
+                    <img src="img/crm.png" 
+                        alt="CRM Empresarial" 
+                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                </div>
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-3xl font-semibold italic text-white leading-tight leading-none">CRM Empresarial<br>Full Stack</h3>
+                    <span class="text-[10px] bg-white/10 px-3 py-1 rounded-full uppercase tracking-widest text-blue-300">New</span>
+                </div>
+                <p class="text-gray-400 mb-6 font-light">Desarrollado con Angular 20 y Spring Boot (Java 21). Gestión integral de flujos de trabajo.</p>
+                <div class="flex gap-3 text-[10px] font-mono uppercase tracking-widest text-gray-500">
+                    <span>#Angular</span> <span>#Springboot</span> <span>#Java21</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="300">
+                <div class="aspect-video bg-neutral-900 rounded-xl mb-6 overflow-hidden border border-white/5">
+                    <img src="img/unity.png" 
+                        alt="Proyecto Unity 3D" 
+                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                </div>
+    
+            <h3 class="text-3xl font-semibold italic text-white leading-tight mb-4">Interacción Digital<br>Ambientación 3D</h3>
+            <p class="text-gray-400 mb-6 font-light">Creación de entornos inmersivos y lógica de interacción digital avanzada en Unity.</p>
+            <div class="flex gap-3 text-[10px] font-mono uppercase tracking-widest text-gray-500">
+                <span>#Unity</span> <span>#C#</span> <span>#3D_Design</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="px-8 lg:px-24 py-32 bg-white text-black rounded-t-[3rem]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 italic font-medium">
+            <div class="lg:col-span-6" data-aos="fade-up">
+                <h2 class="text-[10px] uppercase tracking-[0.5em] mb-8 text-gray-400 font-bold italic">Perfil Profesional</h2>
+                <p class="text-3xl md:text-5xl leading-[1.1] tracking-tight text-neutral-900 italic">
+                    Motivada por el aprendizaje continuo y la <span class="text-blue-600">resolución de desafíos</span> complejos. Especialista en mantener el orden y la eficiencia en cada línea de código.
+                </p>
+                <div class="mt-12 flex items-center gap-8 font-mono text-sm uppercase">
+                    <div><span class="block text-gray-400">Educación</span>DAM - Nebrija FP</div>
+                    <div><span class="block text-gray-400">Nivel</span>B2 Inglés</div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 grid grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <h3 class="text-[10px] uppercase tracking-[0.5em] mb-6 text-gray-400 font-bold italic">Tecnologías</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>Java (Spring Boot)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>Python (Pandas)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>TypeScript / JS</li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <ul class="space-y-3 text-lg italic">
+                        <li>React / Angular 20</li>
+                        <li>MySQL / Git</li>
+                        <li>Figma / Trello</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="px-8 lg:px-24 py-24 bg-black text-white">
+        <div class="flex flex-col items-center text-center py-20" data-aos="zoom-in">
+            <h2 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-12">¿Hablamos?</h2>
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-xl md:text-2xl font-light">
+                <a href="mailto:mnogalesiglesias@outlook.com" class="hover:text-blue-400 transition-colors border-b border-white/20 pb-2 italic">mnogalesiglesias@outlook.com</a>
+                <a href="https://www.linkedin.com/in/myriam-nogales" target="_blank" class="hover:text-blue-400 transition-colors border-b border-white/20 pb-2 italic">LinkedIn Profile</a>
+                <a href="https://github.com/mymimis" target="_blank" class="hover:text-blue-400 transition-colors border-b border-white/20 pb-2 italic">GitHub: mymimis</a>
+            </div>
+            <p class="mt-16 text-gray-600 text-sm uppercase tracking-[0.5em] font-medium italic">Telf: 665 290 964</p>
+        </div>
+        <div class="pt-10 border-t border-white/5 flex justify-between text-[10px] text-gray-500 uppercase tracking-widest">
+            <p>© 2026 Myriam Nogales</p>
+            <p>Hecho con Tailwind & Amor por el código</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-expo'
+        });
+    </script>
+</body>
+</html>
